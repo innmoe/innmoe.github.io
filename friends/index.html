@@ -53,6 +53,8 @@
   <!-- 不得不预先加载的一些JS文件 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   
+    <script src="https://cdn.jsdelivr.net/npm/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
   
   <style>
     
@@ -137,7 +139,7 @@
 
 <script type="text/javascript">
 {
-    const flist = JSON.parse(`[{"name":"Test","bio":" ","avatar":"../images/avatar.webp","link":"#"}]`);
+    const flist = JSON.parse(`[{"name":"Me","bio":" ","avatar":"../images/avatar.jpg","link":"#"}]`);
     let friendNodes = '';
     while (flist.length > 0) {
         const rndNum = Math.floor(Math.random()*flist.length);
