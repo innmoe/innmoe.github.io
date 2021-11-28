@@ -1,1 +1,1 @@
-[{"title":"Hello World","date":"2021-11-28T10:04:14.882Z","url":"/2021/11/28/hello-world/","categories":[["undefined",""]],"content":"时隔100年又开始写博客了，原来的服务器全都木大就放弃Wordpress改用Hexo了，照着教程一通操作还是搞定了，下面就随便写一点凑凑字数吧。 主题用的是Kratos-Rebirth，内容托管在Gitlab上，写作使用的Typora。 快速入门创建新文章 启动本地服务器 生成静态文件 部署"}]
+[{"title":"Hello World","date":"2021-11-28T10:04:14.882Z","url":"/2021/11/28/hello-world/","categories":[["undefined",""]],"content":"时隔100年又开始写博客了，原来的服务器全都木大就放弃Wordpress改用Hexo了，照着教程一通操作还是搞定了，下面就随便写一点凑凑字数吧。 主题用的是Kratos-Rebirth，内容托管在Github上，写作使用的Typora。 快速入门创建新文章 启动本地服务器 生成静态文件 部署"}]
