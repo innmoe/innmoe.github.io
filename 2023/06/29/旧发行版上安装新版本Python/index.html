@@ -3,7 +3,7 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="https://innmoe.vicp.fun/f/8lCz/avatar.png">
+  <link rel="icon" href="https://innmoe.vicp.fun/static/blog/img/avatar.png">
   
   <title>旧发行版上安装新版本Python | 摸鱼池塘</title>
   
@@ -24,13 +24,13 @@
 <meta property="og:site_name" content="摸鱼池塘">
 <meta property="og:description" content="由于各种原因我们需要在一些旧发行版中安装新版本的Python，通常网上的教程都是进行编译安装，但新手进行编译安装极容易出现依赖缺失等问题，最简单的方法还是使用编译好的包直接进行安装，这里分别介绍Ubuntu和Centos的安装方法。 Ubuntu1. 添加源12sudo apt install software-properties-commonsudo add-apt-repository pp">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://innmoe.vicp.fun/f/8lCz/avatar.png">
+<meta property="og:image" content="https://innmoe.vicp.fun/static/blog/img/avatar.png">
 <meta property="article:published_time" content="2023-06-29T13:34:07.000Z">
-<meta property="article:modified_time" content="2023-06-29T14:28:52.510Z">
+<meta property="article:modified_time" content="2023-11-26T06:07:21.329Z">
 <meta property="article:author" content="nop">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://innmoe.vicp.fun/f/8lCz/avatar.png">
+<meta name="twitter:image" content="https://innmoe.vicp.fun/static/blog/img/avatar.png">
   
   <!-- 站点验证相关 -->
   
@@ -39,45 +39,39 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="https://cdn.jsdelivr.net/npm/hexo-theme-kratos-rebirth@latest/source/css/kratosr.min.css" media="all"></script>
+  <link rel="stylesheet" id="kratos-css" href="https://innmoe.vicp.fun/static/blog/source/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="darkmode-css" href="https://cdn.jsdelivr.net/npm/hexo-theme-kratos-rebirth@latest/source/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hexo-theme-kratos-rebirth@latest/source/js/kr-dark.min.js"></script>
-  
-  
-    <link rel="stylesheet" id="highlight-css" href="https://cdn.jsdelivr.net/npm/hexo-theme-kratos-rebirth@latest/source/css/highlight/night-eighties.min.css" media="all"></script>
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
-  <link rel="stylesheet" id="nprogress-css" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css" media="all"></script>
+    <link rel="stylesheet" id="darkmode-css" href="https://innmoe.vicp.fun/static/blog/source/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="https://innmoe.vicp.fun/static/blog/source/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"></script>
+    <link rel="stylesheet" id="highlight-css" href="https://innmoe.vicp.fun/static/blog/source/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="https://innmoe.vicp.fun/static/blog/source/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="https://innmoe.vicp.fun/static/blog/source/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+    <link rel="stylesheet" href="https://innmoe.vicp.fun/static/blog/source/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="https://innmoe.vicp.fun/static/blog/source/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://innmoe.vicp.fun/static/blog/source/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
-    <script src="https://cdn.jsdelivr.net/npm/qrcode_js@1.0.0/qrcode.min.js"></script>
+    <script src="https://innmoe.vicp.fun/static/blog/source/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
   
   
   <style>
     
       .kratos-cover.kratos-cover-2 {
-        background-image: url('https://innmoe.vicp.fun/f/w4uM/banner.webp');
+        background-image: url('https://innmoe.vicp.fun/static/blog/img/banner.webp');
       }
     
-    
-      @media(min-width:768px) {
-        body.custom-background {
-          background-image: url('/images/bg.webp');
-        }
-      }
     
   </style>
   
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 7.0.0"></head>
 
 
     <body class="custom-background">
@@ -198,7 +192,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1688048932510"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1700978841329"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -309,7 +303,7 @@
                     <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-06-29T14:28:52.510Z" itemprop="dateModified">最后编辑：2023-06-29</time>
+                    <time datetime="2023-11-26T06:07:21.329Z" itemprop="dateModified">最后编辑：2023-11-26</time>
                 </div>
             </div>
         </footer>
@@ -319,7 +313,7 @@
             
             
             <div class="nav-next clearfix">
-                <a title=" Hello World" href="/2023/06/29/hello-world/">下一篇 &gt;</a>
+                <a title=" Hello World" href="/2023/11/26/hello-world/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -344,7 +338,7 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="https://innmoe.vicp.fun/f/8lCz/avatar.png" loading="lazy" decoding="auto" />
+            <img class="about-photo" src="https://innmoe.vicp.fun/static/blog/img/avatar.png" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
@@ -401,7 +395,7 @@
         
           
           
-            <a class="list-group-item" href="/2023/06/29/hello-world/"><i class="fa  fa-book"></i> Hello World</a>
+            <a class="list-group-item" href="/2023/11/26/hello-world/"><i class="fa  fa-book"></i> Hello World</a>
             
           
         
@@ -488,8 +482,8 @@
 </div>
 </div>
 
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="https://innmoe.vicp.fun/static/blog/source/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="https://innmoe.vicp.fun/static/blog/source/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -499,13 +493,13 @@
 </script>
 
 
-    <script async src="https://cdn.jsdelivr.net/npm/hexo-theme-kratos-rebirth@latest/source/js/candy.min.js"></script>
+    <script async src="https://innmoe.vicp.fun/static/blog/source/js/candy.min.js"></script>
 
 
 
-    <script defer src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="https://innmoe.vicp.fun/static/blog/source/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <script defer src="https://innmoe.vicp.fun/static/blog/source/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -517,10 +511,10 @@
 
 
 
-    <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="https://innmoe.vicp.fun/static/blog/source/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-kratos-rebirth@latest/source/js/kratosr.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-kratos-rebirth@latest/source/js/pjax.min.js"></script>
+<script defer src="https://innmoe.vicp.fun/static/blog/source/js/kratosr.min.js"></script>
+<script defer src="https://innmoe.vicp.fun/static/blog/source/js/pjax.min.js"></script>
 
 
 
